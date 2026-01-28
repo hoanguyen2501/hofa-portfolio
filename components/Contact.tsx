@@ -3,7 +3,7 @@
 import Section from './Section';
 import { Button } from './ui/Button';
 import { personalInfo, socialLinks } from '@/lib/data';
-import { Mail, Linkedin, Github, Phone, MapPin } from 'lucide-react';
+import { Mail, Linkedin, Github, MapPin } from 'lucide-react';
 
 export default function Contact() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -13,23 +13,31 @@ export default function Contact() {
   };
 
   return (
-    <Section id="contact" title="Get in Touch" className="mb-20">
-      <div className="grid md:grid-cols-2 gap-12 items-center">
-        <div>
-          <h3 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
-            Let's work together
-          </h3>
-          {/* <p className="text-lg text-foreground/70 mb-8 max-w-md">
-            {personalInfo.summary.substring(0, 120)}...
-          </p> */}
+    <Section id="contact" title="Contact" className="mb-20">
+      <div className="grid md:grid-cols-2 gap-10 items-stretch">
+
+        {/* ================= LEFT: CONTACT INFO ================= */}
+        <div
+          className="h-full bg-background border border-border rounded-3xl p-6 md:p-8 shadow-secondary/10 flex flex-col"
+        >
+          <div className="mb-6">
+            <h3 className="text-2xl font-bold text-foreground mb-2">
+              Get in Touch
+            </h3>
+            <p className="text-sm text-foreground/70 leading-relaxed">
+              Open to backend developer opportunities, system design discussions,
+              and long-term product development.
+            </p>
+          </div>
 
           <div className="space-y-4">
             <a
               href={`mailto:${socialLinks.email}`}
-              className="flex items-center gap-4 text-foreground/80 hover:text-primary transition-colors group"
+              className="flex items-center gap-4 text-sm text-foreground/80 hover:text-primary transition-colors group"
             >
-              <span className="w-10 h-10 flex items-center justify-center rounded-full bg-primary/10 text-primary group-hover:bg-primary/20 transition-colors">
-                <Mail size={20} />
+              <span
+                className="w-9 h-9 flex items-center justify-center rounded-full bg-primary/10 text-primary group-hover:bg-primary/20">
+                <Mail size={18} />
               </span>
               {socialLinks.email}
             </a>
@@ -39,10 +47,12 @@ export default function Contact() {
                 href={socialLinks.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-4 text-foreground/80 hover:text-primary transition-colors group"
+                className="flex items-center gap-4 text-sm text-foreground/80 hover:text-primary transition-colors group"
               >
-                <span className="w-10 h-10 flex items-center justify-center rounded-full bg-primary/10 text-primary group-hover:bg-primary/20 transition-colors">
-                  <Linkedin size={20} />
+                <span
+                  className="w-9 h-9 flex items-center justify-center rounded-full bg-primary/10 text-primary group-hover:bg-primary/20"
+                >
+                  <Linkedin size={18} />
                 </span>
                 LinkedIn Profile
               </a>
@@ -53,77 +63,65 @@ export default function Contact() {
                 href={socialLinks.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-4 text-foreground/80 hover:text-primary transition-colors group"
+                className="flex items-center gap-4 text-sm text-foreground/80 hover:text-primary transition-colors group"
               >
-                <span className="w-10 h-10 flex items-center justify-center rounded-full bg-primary/10 text-primary group-hover:bg-primary/20 transition-colors">
-                  <Github size={20} />
+                <span
+                  className="w-9 h-9 flex items-center justify-center rounded-full bg-primary/10 text-primary group-hover:bg-primary/20"
+                >
+                  <Github size={18} />
                 </span>
-                GitHub Profile
+                GitHub Repository
               </a>
             )}
 
-            <a
-              href={`tel:${socialLinks.phone}`}
-              className="flex items-center gap-4 text-foreground/80 hover:text-primary transition-colors group"
-            >
-              <span className="w-10 h-10 flex items-center justify-center rounded-full bg-primary/10 text-primary group-hover:bg-primary/20 transition-colors">
-                <Phone size={20} />
-              </span>
-              {socialLinks.phone}
-            </a>
-
-            <div className="flex items-center gap-4 text-foreground/80">
-              <span className="w-10 h-10 flex items-center justify-center rounded-full bg-primary/10 text-primary">
-                <MapPin size={20} />
+            <div className="flex items-center gap-4 text-sm text-foreground/70">
+              <span
+                className="w-9 h-9 flex items-center justify-center rounded-full bg-primary/10 text-primary"
+              >
+                <MapPin size={18} />
               </span>
               {personalInfo.location}
             </div>
           </div>
         </div>
 
+        {/* ================= RIGHT: CONTACT FORM ================= */}
         <form
           onSubmit={handleSubmit}
-          className="space-y-4 bg-background p-6 md:p-8 rounded-3xl shadow-2xl shadow-secondary/20 border border-border"
+          className="h-full bg-background border border-border rounded-3xl p-6 md:p-8 shadow-secondary/20 flex flex-col"
         >
-          <div className="grid grid-cols-2 gap-4">
-            <div className="space-y-2">
-              <label htmlFor="name" className="text-sm font-medium text-foreground/70">
-                Name
-              </label>
-              <input
-                type="text"
-                id="name"
-                className="w-full px-4 py-3 bg-secondary/5 border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
-                placeholder="John Doe"
-              />
-            </div>
-            <div className="space-y-2">
-              <label htmlFor="email" className="text-sm font-medium text-foreground/70">
-                Email
-              </label>
-              <input
-                type="email"
-                id="email"
-                className="w-full px-4 py-3 bg-secondary/5 border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
-                placeholder="john@example.com"
-              />
-            </div>
+          <h4 className="text-lg font-semibold text-foreground mb-4">
+            Send a Message
+          </h4>
+
+          <div className="grid grid-cols-2 gap-4 mb-4">
+            <input
+              type="text"
+              placeholder="Your name"
+              className="w-full px-4 py-3 text-sm bg-secondary/5 border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/40 transition-all"
+            />
+
+            <input
+              type="email"
+              placeholder="Your email"
+              className="w-full px-4 py-3 text-sm bg-secondary/5 border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/40 transition-all"
+            />
           </div>
-          <div className="space-y-2">
-            <label htmlFor="message" className="text-sm font-medium text-foreground/70">
-              Message
-            </label>
-            <textarea
-              id="message"
-              rows={4}
-              className="w-full px-4 py-3 bg-secondary/5 border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all resize-none"
-              placeholder="Tell me about your project..."
-            ></textarea>
+
+          <textarea
+            rows={4}
+            placeholder="Briefly describe your message or opportunity..."
+            className="w-full px-4 py-3 text-sm bg-secondary/5 border border-border rounded-xl resize-none focus:outline-none focus:ring-2 focus:ring-primary/40 transition-all"
+          />
+
+          {/* push button to bottom */}
+          <div className="mt-auto pt-4">
+            <Button type="submit" variant="primary" className="w-full">
+              Send Message
+            </Button>
           </div>
-          <Button type="submit" variant="primary" className="w-full">
-            Send Message
-          </Button>
         </form>
+
       </div>
     </Section>
   );

@@ -7,7 +7,7 @@
     "email": "bahoang2501@gmail.com",
     "linkedin": "hoanguyen2501",
     "github": "",
-    "summary": "Backend Developer with nearly 2 years of hands-on experience building and maintaining backend services using ASP.NET Core and Entity Framework Core. Experienced in RESTful API design, relational databases, and clean code principles, with a strong focus on improving backend reliability and performance. Actively expanding practical knowledge in DevOps practices such as containerization, CI/CD, and cloud-based deployment within real-world environments."
+    "summary": "ASP.NET Core • EF Core • Clean Architecture • DevOps Learner"
   },
   "navItems": [
     { "name": "Home", "href": "#home" },
@@ -26,6 +26,7 @@
           "name": "WebOrder (WO)",
           "period": "Nov 2025 - Present",
           "team": "8 members",
+          "role":"Developer",
           "description": "A B2B web application for managing orders, stock, deliveries, promotions and rebates for tire distribution and import operations",
           "technologies": [
             ".NET 9",
@@ -55,6 +56,7 @@
           "name": "Order Operation Management System (OOMS)",
           "period": "Jul 2024 - Nov 2025",
           "team": "4 members",
+          "role": "Developer",
           "description": "A comprehensive web application managing orders, permits, production workflows, and deliveries for outdoor structures as part of a distributed microservices ecosystem",
           "technologies": [
             ".NET 8",
@@ -89,6 +91,7 @@
           "name": "SISOSIT Power BI Dashboard",
           "period": "Jan 2024 - Jul 2024",
           "team": "",
+          "role": "Developer",
           "description": "Enhanced an existing Power BI dashboard to scale from single-division to multi-division usage",
           "technologies": ["Power BI"],
           "responsibilities": [
@@ -101,6 +104,7 @@
           "name": "Internship",
           "period": "Aug 2023 - Dec 2023",
           "team": "",
+          "role": "Developer",
           "description": "Internship program focused on learning backend development with ASP.NET Core and Angular",
           "technologies": ["ASP.NET Core", "Angular", "SQL"],
           "responsibilities": [

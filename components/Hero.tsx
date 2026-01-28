@@ -4,16 +4,20 @@ import { Button } from './ui/Button';
 import { personalInfo } from '@/lib/data';
 
 export default function Hero() {
+  const highLights = [
+    { heading: "1+", subHeading: "Years in Backend Developement" },
+    { heading: "2+", subHeading: "Projects Delivered" },
+    { heading: "REST APIs", subHeading: "Scalable & Maintainable Design" },
+    { heading: "DevOps", subHeading: "CI/CD • Docker • Cloud Learning" },
+  ]
+
   return (
     <Section id="home" className="justify-center relative">
-      {/* Blur Overlay Effect */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background/80 to-background/60 backdrop-blur-sm pointer-events-none"></div>
-
       {/* Content */}
-      <div className="relative z-10 flex flex-col md:flex-row items-center gap-12 md:gap-16">
+      <div className="relative z-10 flex flex-col flex-grow md:flex-row items-center gap-12 md:gap-16">
         <div className="relative group shrink-0">
-          <div className="absolute -inset-1 bg-gradient-to-r from-primary to-accent rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
-          <div className="relative w-48 h-48 md:w-64 md:h-64 overflow-hidden rounded-full border-4 border-background shadow-xl">
+          <div className="absolute -inset-2 bg-gradient-to-r from-primary to-accent rounded-full blur-lg opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+          <div className="relative w-56 h-56 md:w-80 md:h-80 overflow-hidden rounded-full border-4 border-background shadow-xl">
             <Image
               src="/avatar.jpg"
               alt={`${personalInfo.name} - ${personalInfo.title}`}
@@ -38,22 +42,14 @@ export default function Hero() {
 
             {/* Overview Highlights */}
             <div className="grid grid-cols-2 gap-4 pt-4 max-w-2xl">
-              <div className="bg-secondary/20 backdrop-blur-sm rounded-xl p-4 border border-border/50">
-                <div className="text-2xl font-bold text-primary">2+</div>
-                <div className="text-sm text-foreground/70">Years Experience</div>
-              </div>
-              <div className="bg-secondary/20 backdrop-blur-sm rounded-xl p-4 border border-border/50">
-                <div className="text-2xl font-bold text-primary">4+</div>
-                <div className="text-sm text-foreground/70">Projects Delivered</div>
-              </div>
-              <div className="bg-secondary/20 backdrop-blur-sm rounded-xl p-4 border border-border/50">
-                <div className="text-2xl font-bold text-primary">ASP.NET</div>
-                <div className="text-sm text-foreground/70">Core Expertise</div>
-              </div>
-              <div className="bg-secondary/20 backdrop-blur-sm rounded-xl p-4 border border-border/50">
-                <div className="text-2xl font-bold text-primary">Full-Stack</div>
-                <div className="text-sm text-foreground/70">Capabilities</div>
-              </div>
+              {
+                highLights.map((hl, index) => (
+                  <div key={index} className="bg-secondary/20 backdrop-blur-sm rounded-xl p-4 border border-border/50">
+                    <div className="text-2xl font-bold text-primary">{hl.heading}</div>
+                    <div className="text-sm text-foreground/70">{hl.subHeading}</div>
+                  </div>
+                ))
+              }
             </div>
           </div>
 
@@ -61,9 +57,14 @@ export default function Hero() {
             <Button href="#contact" variant="primary" size="lg">
               Get in touch
             </Button>
-            <Button href="#experience" variant="outline" size="lg">
-              View Work
-            </Button>
+            <a
+              href="/NguyenBaHoang_CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 rounded-full font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 px-8 py-4 text-lg border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+            >
+              View My CV
+            </a>
           </div>
         </div>
       </div>
