@@ -1,0 +1,165 @@
+{
+  "personalInfo": {
+    "name": "Nguyen Ba Hoang",
+    "title": "Backend Developer",
+    "location": "Di An, Ho Chi Minh City",
+    "phone": "(+84) 867-765-003",
+    "email": "bahoang2501@gmail.com",
+    "linkedin": "hoanguyen2501",
+    "github": "",
+    "summary": "Backend Developer with nearly 2 years of hands-on experience building and maintaining backend services using ASP.NET Core and Entity Framework Core. Experienced in RESTful API design, relational databases, and clean code principles, with a strong focus on improving backend reliability and performance. Actively expanding practical knowledge in DevOps practices such as containerization, CI/CD, and cloud-based deployment within real-world environments."
+  },
+  "navItems": [
+    { "name": "Home", "href": "#home" },
+    { "name": "Experience", "href": "#experience" },
+    { "name": "Tech Stack", "href": "#tech-stack" },
+    { "name": "Contact", "href": "#contact" }
+  ],
+  "experiences": [
+    {
+      "company": "CT&P Solutions JSC (Vietnam)",
+      "role": "Backend Developer",
+      "period": "08/2023 - Present",
+      "location": "Vietnam",
+      "projects": [
+        {
+          "name": "WebOrder (WO)",
+          "period": "Nov 2025 - Present",
+          "team": "8 members",
+          "description": "A B2B web application for managing orders, stock, deliveries, promotions and rebates for tire distribution and import operations",
+          "technologies": [
+            ".NET 9",
+            "Minimal API",
+            "Aspire",
+            "CQRS",
+            "3-Layered Architecture",
+            "TypeScript",
+            "React 18",
+            "NextJS",
+            "Tailwind",
+            "SQL Server 2019",
+            "Docker",
+            "Nginx",
+            "K8s",
+            "Git",
+            "GitHub"
+          ],
+          "responsibilities": [
+            "Designed and developed CRUD and publishing APIs for system notifications, including promotions, rebates, and internal announcements",
+            "Implemented flexible audience-targeting logic to distribute notifications to multiple recipient groups, such as roles, specific users, and business-defined groups",
+            "Worked with existing database views for incoming and available stock and implemented a new view to retrieve related material data via key-based relationships",
+            "Implemented a column matrix mechanism to dynamically control column visibility based on user roles"
+          ]
+        },
+        {
+          "name": "Order Operation Management System (OOMS)",
+          "period": "Jul 2024 - Nov 2025",
+          "team": "4 members",
+          "description": "A comprehensive web application managing orders, permits, production workflows, and deliveries for outdoor structures as part of a distributed microservices ecosystem",
+          "technologies": [
+            ".NET 8",
+            "ASP.NET Core WebAPI",
+            "EF Core",
+            "3-Layered Architecture",
+            "Event Driven (Pub/Sub)",
+            "HTML",
+            "SCSS",
+            "TypeScript",
+            "Angular 18",
+            "Kendo UI",
+            "PostgreSQL",
+            "Elasticsearch",
+            "Docker",
+            "K8s",
+            "Nginx",
+            "Google Cloud Platform (GCP)",
+            "Git",
+            "GitHub"
+          ],
+          "responsibilities": [
+            "Designed and implemented REST API endpoints to validate CRM reference order updates, ensuring data integrity across the order management system",
+            "Implemented customer email update logic to prevent duplicate records and synchronize customer information across ERP, OOMS, and Customer Portal services",
+            "Designed and implemented an API endpoint to clear inactive ERP sessions, maintaining synchronization between ERP and OOMS",
+            "Implemented a daily scheduled job using Google Cloud Scheduler to automatically clear inactive ERP sessions, reducing manual operational overhead",
+            "Refactored delivery plan logging from database triggers to application-level logic to accurately track the source screen responsible for modifications",
+            "Integrated Dropbox text tags for electronic document signing using embedded DevExpress components, improving document workflow efficiency"
+          ]
+        },
+        {
+          "name": "SISOSIT Power BI Dashboard",
+          "period": "Jan 2024 - Jul 2024",
+          "team": "",
+          "description": "Enhanced an existing Power BI dashboard to scale from single-division to multi-division usage",
+          "technologies": ["Power BI"],
+          "responsibilities": [
+            "Enhanced an existing Power BI dashboard to scale from single-division to multi-division usage",
+            "Updated measures for sell-in, sell-out, and stock-in-trade metrics",
+            "Applied parameter tables to dynamically adjust measure labels based on filters"
+          ]
+        },
+        {
+          "name": "Internship",
+          "period": "Aug 2023 - Dec 2023",
+          "team": "",
+          "description": "Internship program focused on learning backend development with ASP.NET Core and Angular",
+          "technologies": ["ASP.NET Core", "Angular", "SQL"],
+          "responsibilities": [
+            "Learned backend development with ASP.NET Core and Angular",
+            "Built foundational REST APIs and worked with relational databases",
+            "Participated in daily stand-ups and team development activities"
+          ]
+        }
+      ]
+    }
+  ],
+  "techStacks": [
+    {
+      "category": "Languages",
+      "items": ["C#", "SQL", "TypeScript", "JavaScript"]
+    },
+    {
+      "category": "Backend",
+      "items": ["ASP.NET Core Web API", "Minimal API", "Entity Framework Core"]
+    },
+    {
+      "category": "Databases",
+      "items": ["PostgreSQL", "SQL Server", "Elasticsearch"]
+    },
+    {
+      "category": "Architecture",
+      "items": ["3-Layered Architecture", "CQRS", "Pub/Sub"]
+    },
+    {
+      "category": "Cloud & DevOps",
+      "items": ["Docker", "Kubernetes", "Nginx", "Google Cloud Platform"]
+    },
+    {
+      "category": "Tools",
+      "items": ["Git", "GitHub"]
+    },
+    {
+      "category": "Frontend",
+      "items": ["Angular", "React", "NextJS", "Tailwind"]
+    }
+  ],
+  "education": {
+    "degree": "Bachelor of Engineering in Information Systems",
+    "school": "University of Information Technology, VNU-HCM",
+    "period": "Aug 2019 – May 2024",
+    "gpa": "3.2 / 4.0"
+  },
+  "certificates": [
+    {
+      "name": "TOEIC Listening & Reading",
+      "date": "Nov 2022",
+      "score": "670",
+      "details": "Listening: 315, Reading: 355"
+    }
+  ],
+  "socialLinks": {
+    "email": "bahoang2501@gmail.com",
+    "linkedin": "https://linkedin.com/in/hoanguyen2501",
+    "github": "",
+    "phone": "(+84) 867-765-003"
+  }
+}
