@@ -4,8 +4,8 @@ import { Button } from './ui/Button';
 import { personalInfo } from '@/lib/data';
 
 export default function Hero() {
-  const highLights = [
-    { heading: "1+", subHeading: "Years in Backend Developement" },
+  const highlights = [
+    { heading: "2", subHeading: "Years in Backend Developement" },
     { heading: "2+", subHeading: "Projects Delivered" },
     { heading: "REST APIs", subHeading: "Scalable & Maintainable Design" },
     { heading: "DevOps", subHeading: "CI/CD • Docker • Cloud Learning" },
@@ -36,17 +36,17 @@ export default function Hero() {
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-foreground">
               {personalInfo.title}
             </h1>
-            <p className="max-w-2xl text-base text-foreground/70 leading-relaxed">
+            <p className="max-w-2xl text-lg font-normal text-muted-text leading-relaxed">
               {personalInfo.summary}
             </p>
 
             {/* Overview Highlights */}
             <div className="grid grid-cols-2 gap-4 pt-4 max-w-2xl">
               {
-                highLights.map((hl, index) => (
+                highlights.map((hl, index) => (
                   <div key={index} className="bg-secondary/20 backdrop-blur-sm rounded-xl p-4 border border-border/50">
                     <div className="text-2xl font-bold text-primary">{hl.heading}</div>
-                    <div className="text-sm text-foreground/70">{hl.subHeading}</div>
+                    <div className="text-base font-normal text-muted-text">{hl.subHeading}</div>
                   </div>
                 ))
               }

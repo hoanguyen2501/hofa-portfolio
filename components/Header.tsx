@@ -3,7 +3,6 @@
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { Menu, X } from 'lucide-react';
-import { ThemeToggle } from './ThemeToggle';
 import { navItems } from '@/lib/data';
 
 export default function Header() {
@@ -27,7 +26,7 @@ export default function Header() {
       <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-background/80 backdrop-blur-md py-4 shadow-sm' : 'bg-transparent py-6'}`}>
         <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
           <Link href="#home" className="text-xl font-bold tracking-tighter hover:text-primary transition-colors">
-            deve.
+            hofa.
           </Link>
 
           <div className="hidden md:flex items-center gap-8">
@@ -42,12 +41,10 @@ export default function Header() {
                 </Link>
               ))}
             </nav>
-            <ThemeToggle />
           </div>
 
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center gap-4">
-            <ThemeToggle />
             <button
               type="button"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}

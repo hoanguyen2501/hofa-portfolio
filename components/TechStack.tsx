@@ -37,7 +37,7 @@ export default function TechStack() {
                 {stack.items.map((item) => (
                   <span
                     key={item}
-                    className="text-xs px-2 py-1 rounded-md bg-background/50 text-foreground/70"
+                    className="text-sm px-2 py-1 rounded-md bg-background/50 font-normal text-muted-text"
                   >
                     {item}
                   </span>

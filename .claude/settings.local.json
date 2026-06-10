@@ -5,7 +5,9 @@
       "Bash(npm run build:*)",
       "Bash(npm run dev:*)",
       "Bash(timeout /t 5)",
-      "Bash(npm uninstall:*)"
+      "Bash(npm uninstall:*)",
+      "Bash(Remove-Item \"d:\\\\workspace\\\\projects\\\\hofa-portfolio\\\\contexts\\\\ThemeContext.tsx\" -Force)",
+      "Bash(Remove-Item \"d:\\\\workspace\\\\projects\\\\hofa-portfolio\\\\components\\\\ThemeToggle.tsx\" -Force)"
     ]
   }
 }

@@ -1,17 +1,17 @@
 @import "tailwindcss";
 
 :root {
-  /* Warm Sandy Tones - Light Mode (matching avatar.jpg) */
-  --background: #F5F2EB;
-  --foreground: #3E3E3E;
-  --primary: #B8956D;
-  --primary-foreground: #FFFFFF;
-  --secondary: #E8DCC8;
-  --secondary-foreground: #3E3E3E;
-  --accent: #D4A574;
-  --accent-foreground: #FFFFFF;
-  --muted: #F9F6F0;
-  --border: #E0D5C7;
+  --background: #1C1917;
+  --foreground: #F5F5F4;
+  --primary: #C9A876;
+  --primary-foreground: #1C1917;
+  --secondary: #44403C;
+  --secondary-foreground: #F5F5F4;
+  --accent: #D4A373;
+  --accent-foreground: #1C1917;
+  --muted: #292524;
+  --border: #57534E;
+  --muted-text: rgba(245, 245, 244, 0.8);
 }
 
 @theme inline {
@@ -25,6 +25,7 @@
   --color-accent-foreground: var(--accent-foreground);
   --color-muted: var(--muted);
   --color-border: var(--border);
+  --color-muted-text: var(--muted-text);
 
   --font-sans: var(--font-geist-sans), "Inter", sans-serif;
   --font-mono: var(--font-geist-mono), "Roboto Mono", monospace;
@@ -43,20 +44,6 @@
   }
 }
 
-:root[data-theme="dark"] {
-  /* Warm Sandy Tones - Dark Mode (matching avatar.jpg) */
-  --background: #1C1917;
-  --foreground: #F5F5F4;
-  --primary: #C9A876;
-  --primary-foreground: #1C1917;
-  --secondary: #44403C;
-  --secondary-foreground: #F5F5F4;
-  --accent: #D4A373;
-  --accent-foreground: #1C1917;
-  --muted: #292524;
-  --border: #57534E;
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
@@ -65,7 +52,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Placeholder styles that adapt to theme */
+/* Placeholder styles */
 input::placeholder,
 textarea::placeholder {
   color: var(--foreground);
@@ -93,7 +80,7 @@ textarea:focus::placeholder {
   inset: 0;
   -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
-  background-color: rgb(from var(--background) r g b / 0.8);
+  background-color: rgb(from var(--background) r g b / 0.4);
 }
 
 /* Minimalist Scrollbar */

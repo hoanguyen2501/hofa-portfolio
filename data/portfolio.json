@@ -10,10 +10,22 @@
     "summary": "ASP.NET Core • EF Core • Clean Architecture • DevOps Learner"
   },
   "navItems": [
-    { "name": "Home", "href": "#home" },
-    { "name": "Experience", "href": "#experience" },
-    { "name": "Tech Stack", "href": "#tech-stack" },
-    { "name": "Contact", "href": "#contact" }
+    {
+      "name": "Home",
+      "href": "#home"
+    },
+    {
+      "name": "Experience",
+      "href": "#experience"
+    },
+    {
+      "name": "Tech Stack",
+      "href": "#tech-stack"
+    },
+    {
+      "name": "Contact",
+      "href": "#contact"
+    }
   ],
   "experiences": [
     {
@@ -26,8 +38,8 @@
           "name": "WebOrder (WO)",
           "period": "Nov 2025 - Present",
           "team": "8 members",
-          "role":"Developer",
-          "description": "A B2B web application for managing orders, stock, deliveries, promotions and rebates for tire distribution and import operations",
+          "role": "Developer",
+          "description": " A B2B web application for order management, inventory control, logistics, promotions and rebates for tire distribution and import operations",
           "technologies": [
             ".NET 9",
             "Minimal API",
@@ -43,13 +55,17 @@
             "Nginx",
             "K8s",
             "Git",
-            "GitHub"
+            "GitHub",
+            "ChatGPT",
+            "Claude AI"
           ],
           "responsibilities": [
-            "Designed and developed CRUD and publishing APIs for system notifications, including promotions, rebates, and internal announcements",
-            "Implemented flexible audience-targeting logic to distribute notifications to multiple recipient groups, such as roles, specific users, and business-defined groups",
-            "Worked with existing database views for incoming and available stock and implemented a new view to retrieve related material data via key-based relationships",
-            "Implemented a column matrix mechanism to dynamically control column visibility based on user roles"
+            "Built CRUD and publishing APIs for system notifications, including promotions, rebates, and internal announcements",
+            "Developed SQL Views to efficiently track real-time stock (available and incoming) and fetch related material data via key-based relationships",
+            "Designed and developed a survey module to capture and process customer feedback",
+            "Built import/export engines via Excel for complex Master Data (Warehouses, Material Group Mapping, Sales Persons, Payment Terms) and Forecasting Data, ensuring strict data validation",
+            "Developed a CSV converter utility to automatically transform raw SAP data into standard formats, eliminating manual data conversion for users",
+            "Used Claude and ChatGPT as AI-assisted development tools to optimize development workflow and always checking the AI-generated code carefully to ensure quality"
           ]
         },
         {
@@ -93,7 +109,9 @@
           "team": "",
           "role": "Developer",
           "description": "Enhanced an existing Power BI dashboard to scale from single-division to multi-division usage",
-          "technologies": ["Power BI"],
+          "technologies": [
+            "Power BI"
+          ],
           "responsibilities": [
             "Enhanced an existing Power BI dashboard to scale from single-division to multi-division usage",
             "Updated measures for sell-in, sell-out, and stock-in-trade metrics",
@@ -106,7 +124,11 @@
           "team": "",
           "role": "Developer",
           "description": "Internship program focused on learning backend development with ASP.NET Core and Angular",
-          "technologies": ["ASP.NET Core", "Angular", "SQL"],
+          "technologies": [
+            "ASP.NET Core",
+            "Angular",
+            "SQL"
+          ],
           "responsibilities": [
             "Learned backend development with ASP.NET Core and Angular",
             "Built foundational REST APIs and worked with relational databases",
@@ -119,37 +141,69 @@
   "techStacks": [
     {
       "category": "Languages",
-      "items": ["C#", "SQL", "TypeScript", "JavaScript"]
+      "items": [
+        "C#",
+        "SQL",
+        "TypeScript",
+        "JavaScript"
+      ]
     },
     {
       "category": "Backend",
-      "items": ["ASP.NET Core Web API", "Minimal API", "Entity Framework Core"]
+      "items": [
+        "ASP.NET Core Web API",
+        "Minimal API",
+        "Entity Framework Core"
+      ]
     },
     {
       "category": "Databases",
-      "items": ["PostgreSQL", "SQL Server", "Elasticsearch"]
+      "items": [
+        "PostgreSQL",
+        "SQL Server",
+        "Elasticsearch"
+      ]
     },
     {
       "category": "Architecture",
-      "items": ["3-Layered Architecture", "CQRS", "Pub/Sub"]
+      "items": [
+        "3-Layered Architecture",
+        "CQRS",
+        "Pub/Sub"
+      ]
     },
     {
       "category": "Cloud & DevOps",
-      "items": ["Docker", "Kubernetes", "Nginx", "Google Cloud Platform"]
+      "items": [
+        "Docker",
+        "Kubernetes",
+        "Nginx",
+        "Google Cloud Platform"
+      ]
     },
     {
       "category": "Tools",
-      "items": ["Git", "GitHub"]
+      "items": [
+        "Git",
+        "GitHub",
+        "ChatGPT",
+        "Claude AI"
+      ]
     },
     {
       "category": "Frontend",
-      "items": ["Angular", "React", "NextJS", "Tailwind"]
+      "items": [
+        "Angular",
+        "React",
+        "NextJS",
+        "Tailwind"
+      ]
     }
   ],
   "education": {
     "degree": "Bachelor of Engineering in Information Systems",
     "school": "University of Information Technology, VNU-HCM",
-    "period": "Aug 2019 – May 2024",
+    "period": "Aug 2019 - May 2024",
     "gpa": "3.2 / 4.0"
   },
   "certificates": [
@@ -163,7 +217,7 @@
   "socialLinks": {
     "email": "bahoang2501@gmail.com",
     "linkedin": "https://linkedin.com/in/hoanguyen2501",
-    "github": "",
+    "github": "https://github.com/hoanguyen2501",
     "phone": "(+84) 867-765-003"
   }
 }

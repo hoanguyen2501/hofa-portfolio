@@ -3,7 +3,6 @@ import { Geist, Geist_Mono, Outfit } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { ThemeProvider } from "@/contexts/ThemeContext";
 import { personalInfo } from "@/lib/data";
 
 const geistSans = Geist({
@@ -41,13 +40,11 @@ export default function RootLayout({
           <div className="fixed-background-overlay"></div>
         </div>
 
-        <ThemeProvider>
-          <Header />
-          <main className="pt-20 relative z-0">
-            {children}
-          </main>
-          <Footer />
-        </ThemeProvider>
+        <Header />
+        <main className="pt-20 relative z-0">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );

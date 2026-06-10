@@ -24,7 +24,7 @@ export default function Contact() {
             <h3 className="text-2xl font-bold text-foreground mb-2">
               Get in Touch
             </h3>
-            <p className="text-sm text-foreground/70 leading-relaxed">
+            <p className="text-base font-normal text-muted-text leading-relaxed">
               Open to backend developer opportunities, system design discussions,
               and long-term product development.
             </p>
@@ -33,7 +33,7 @@ export default function Contact() {
           <div className="space-y-4">
             <a
               href={`mailto:${socialLinks.email}`}
-              className="flex items-center gap-4 text-sm text-foreground/80 hover:text-primary transition-colors group"
+              className="flex items-center gap-4 text-base font-normal text-muted-text hover:text-primary transition-colors group"
             >
               <span
                 className="w-9 h-9 flex items-center justify-center rounded-full bg-primary/10 text-primary group-hover:bg-primary/20">
@@ -47,7 +47,7 @@ export default function Contact() {
                 href={socialLinks.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-4 text-sm text-foreground/80 hover:text-primary transition-colors group"
+                className="flex items-center gap-4 text-base font-normal text-muted-text hover:text-primary transition-colors group"
               >
                 <span
                   className="w-9 h-9 flex items-center justify-center rounded-full bg-primary/10 text-primary group-hover:bg-primary/20"
@@ -63,7 +63,7 @@ export default function Contact() {
                 href={socialLinks.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-4 text-sm text-foreground/80 hover:text-primary transition-colors group"
+                className="flex items-center gap-4 text-base font-normal text-muted-text hover:text-primary transition-colors group"
               >
                 <span
                   className="w-9 h-9 flex items-center justify-center rounded-full bg-primary/10 text-primary group-hover:bg-primary/20"
@@ -74,7 +74,7 @@ export default function Contact() {
               </a>
             )}
 
-            <div className="flex items-center gap-4 text-sm text-foreground/70">
+            <div className="flex items-center gap-4 text-base font-normal text-muted-text">
               <span
                 className="w-9 h-9 flex items-center justify-center rounded-full bg-primary/10 text-primary"
               >
