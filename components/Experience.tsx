@@ -5,7 +5,7 @@ import Section from './Section';
 import { experiences } from '@/lib/data';
 import { Briefcase, Calendar, Users, X, ChevronRight } from 'lucide-react';
 
-type Project = (typeof experiences)[number]['projects'][number];
+type Project = NonNullable<(typeof experiences)[number]['projects']>[number];
 
 function ProjectModal({ project, onClose }: { project: Project; onClose: () => void }) {
   return (
