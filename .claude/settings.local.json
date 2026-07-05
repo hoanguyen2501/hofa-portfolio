@@ -7,7 +7,13 @@
       "Bash(timeout /t 5)",
       "Bash(npm uninstall:*)",
       "Bash(Remove-Item \"d:\\\\workspace\\\\projects\\\\hofa-portfolio\\\\contexts\\\\ThemeContext.tsx\" -Force)",
-      "Bash(Remove-Item \"d:\\\\workspace\\\\projects\\\\hofa-portfolio\\\\components\\\\ThemeToggle.tsx\" -Force)"
+      "Bash(Remove-Item \"d:\\\\workspace\\\\projects\\\\hofa-portfolio\\\\components\\\\ThemeToggle.tsx\" -Force)",
+      "PowerShell(npm run lint 2>&1)",
+      "PowerShell(npm run build 2>&1)",
+      "WebSearch",
+      "WebFetch(domain:www.figma.com)",
+      "WebFetch(domain:tomaszgajda.com)",
+      "WebFetch(domain:web.archive.org)"
     ]
   }
 }
